@@ -14,3 +14,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+
+![首页直播](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_zhibo.png "home_zhibo")
+![首页推荐](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_tuijian.png "home_tuijian")
+![首页热门](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_hot.png  "home_hot")
+![频道](https://github.com/HuPingKang/flutter_demo/blob/master/images/channel_page.png "channel_page")
+![动态](https://github.com/HuPingKang/flutter_demo/blob/master/images/dynamics_page.png "dynamics_page")
