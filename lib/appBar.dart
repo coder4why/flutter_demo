@@ -63,7 +63,7 @@ class _AppNaviBarState extends State<AppNaviBar> with SingleTickerProviderStateM
                               border: InputBorder.none,  //去掉下划线
                               prefixStyle: TextStyle(color: Colors.white),
                               contentPadding: EdgeInsets.only(top:5.0),
-                              hintText: '请输入手机号',
+//                              hintText: '请输入手机号',
                               hintStyle: TextStyle(color: Colors.white),
                             ), autofocus: false, ),
                         ) ,
