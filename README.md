@@ -15,6 +15,7 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
+![预览](https://github.com/HuPingKang/flutter_demo/blob/master/images/finished.gif "finished")
 ![首页直播](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_zhibo.png "home_zhibo")
 ![首页推荐](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_tuijian.png "home_tuijian")
 ![首页热门](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_hot.png  "home_hot")
