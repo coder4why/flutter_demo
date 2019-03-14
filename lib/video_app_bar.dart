@@ -39,7 +39,10 @@ class _VideoAppBarState extends State<VideoAppBar>
               children: <Widget>[
                 Text(
                   '广场',
-                  style: TextStyle(color: Colors.white,fontWeight: FontWeight.w400, fontSize: 23.0),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 23.0),
                 ),
                 Container(
                   margin: EdgeInsets.symmetric(vertical: 2),
@@ -51,7 +54,22 @@ class _VideoAppBarState extends State<VideoAppBar>
                 )
               ],
             ),
-            Icon(Icons.list,color: Colors.white,size: 32.0,),
+            FlatButton(
+              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              onPressed: () {
+                Navigator.pushNamed(context, "DetailPage");
+              },
+              child: Container(
+                width: 30,
+                padding: EdgeInsets.only(left: 30),
+//                alignment: Alignment.centerRight,
+                child: Icon(
+                  Icons.list,
+                  color: Colors.white,
+                  size: 32.0,
+                ),
+              )
+            )
           ],
         ));
   }

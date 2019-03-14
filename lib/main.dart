@@ -14,7 +14,7 @@ import 'person_body.dart';
 
 void main() => runApp(MyApp());
 
-Color themeColor = Colors.pink;
+Color themeColor = Colors.deepOrange;
 
 class MyApp extends StatelessWidget {
   @override
