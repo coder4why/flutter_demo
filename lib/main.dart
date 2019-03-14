@@ -10,8 +10,11 @@ import 'home_hot_page.dart';
 import 'VipAppBarWidget.dart';
 import 'VipBodyWidget.dart';
 import 'DynamicsAppBarWidget.dart';
+import 'person_body.dart';
 
 void main() => runApp(MyApp());
+
+Color themeColor = Colors.pink;
 
 class MyApp extends StatelessWidget {
   @override
@@ -19,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: themeColor,
       ),
       debugShowCheckedModeBanner: true,
       home: MyHomePage(),
@@ -43,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   void initState() {
     super.initState();
-    _tabController = new TabController(vsync: this, length: 4,initialIndex: 0);
+    _tabController = new TabController(vsync: this, length: 4, initialIndex: 0);
   }
 
   @override
@@ -59,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage>
       VideoAppBar(),
       DynamicsAppBar(),
       VipAppBarWidget(),
+//      null,
       PersonAppBar(),
     ];
     var appbodys = [
@@ -108,10 +112,10 @@ class _MyHomePageState extends State<MyHomePage>
       MyVideoPlayer(),
       DynamicsAppBar().createState().body,
       VipBodyWidget(),
-      null
+      PersonBodyWidget(),
     ];
     return Scaffold(
-      appBar: AppBar(
+      appBar:_currentIndex==4?null:AppBar(
         title: appBars[_currentIndex],
         bottom: bottoms[_currentIndex],
       ),
@@ -122,36 +126,36 @@ class _MyHomePageState extends State<MyHomePage>
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                color: Colors.deepOrange,
+                color: themeColor,
               ),
               title: Text(
                 '首页',
-                style: TextStyle(color: Colors.deepOrange),
+                style: TextStyle(color: themeColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.audiotrack,
-                color: Colors.deepOrange,
+                color: themeColor,
               ),
-              title: Text('频道', style: TextStyle(color: Colors.deepOrange))),
+              title: Text('频道', style: TextStyle(color: themeColor))),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.cloud,
-                color: Colors.deepOrange,
+                color: themeColor,
               ),
-              title: Text('动态', style: TextStyle(color: Colors.deepOrange))),
+              title: Text('动态', style: TextStyle(color: themeColor))),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_cart,
-                color: Colors.deepOrange,
+                color: themeColor,
               ),
-              title: Text('会员购', style: TextStyle(color: Colors.deepOrange))),
+              title: Text('会员购', style: TextStyle(color: themeColor))),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
-                color: Colors.deepOrange,
+                color: themeColor,
               ),
-              title: Text('我的', style: TextStyle(color: Colors.deepOrange))),
+              title: Text('我的', style: TextStyle(color: themeColor))),
         ],
 //        fixedColor: Colors.red,
         type: BottomNavigationBarType.fixed,
@@ -162,7 +166,6 @@ class _MyHomePageState extends State<MyHomePage>
           });
         },
       ),
-
     );
   }
 }

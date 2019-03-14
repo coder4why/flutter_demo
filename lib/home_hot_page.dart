@@ -117,7 +117,7 @@ class _HomeHotWidgetState extends State<HomeHotWidget>
                             children: <Widget>[
                               ClipRRect(
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(10.0)),
+                                    BorderRadius.all(Radius.circular(10.0)),
                                 child: Image.network(
                                   images[position - 1],
                                   height: 95,
@@ -147,60 +147,72 @@ class _HomeHotWidgetState extends State<HomeHotWidget>
                       Container(
                           alignment: Alignment.centerLeft,
                           padding: EdgeInsets.symmetric(horizontal: 5.0),
-                          height: 95.0,
+//                          height: 95.0,
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
-                                width: 195,
-                                height: 40.0,
+                                width: 180,
+//                                height: 40.0,
                                 child: Text(
-                                  titles[position-1],
-                                  style: TextStyle(fontSize: 14.0,),
+                                  titles[position - 1],
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                  ),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
 //                                  softWrap: false,//
                                 ),
                               ),
-                              position==1? Container(
-                                alignment: Alignment.center,
-                                width: 60,
-                                decoration: BoxDecoration(
-                                  color: Colors.orangeAccent,
-                                  borderRadius: BorderRadius.all(Radius.circular(3.0)),
-                                ),
-                                child: Text(
-                                  '8万点赞',
-                                  style: TextStyle(fontSize: 12.0,color: Colors.white),
+                              position == 1
+                                  ? Container(
+                                      alignment: Alignment.center,
+                                      width: 60,
+                                      decoration: BoxDecoration(
+                                        color: Colors.orangeAccent,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(3.0)),
+                                      ),
+                                      child: Text(
+                                        '8万点赞',
+                                        style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.white),
 //                                  softWrap: true,
-                                ),
-                              ):Container(),
+                                      ),
+                                    )
+                                  : Container(),
                               Container(
-                                width: 190,
+                                width: 180,
 //                                color: Colors.blue,
                                 child: Text(
                                   '败犬鲁鲁',
-                                  style: TextStyle(fontSize: 12.0,color: Colors.black45),
+                                  style: TextStyle(
+                                      fontSize: 12.0, color: Colors.black45),
 //                                  softWrap: true,
                                 ),
                               ),
                               Container(
-                                width: 190,
+                                  width: 180,
 //                                color: Colors.blue,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: <Widget>[
-                                    Text(
-                                      '29.1万观看-19小时前',
-                                      style: TextStyle(fontSize: 12.0,color: Colors.black45),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Text(
+                                        '29.1万观看-19小时前',
+                                        style: TextStyle(
+                                            fontSize: 12.0,
+                                            color: Colors.black45),
 //                                  softWrap: true,
-                                    ),
-                                    Icon(Icons.more_vert,size: 20.0,color: Colors.black38),
-                                  ],
-                                )
-                              )
+                                      ),
+                                      Icon(Icons.more_vert,
+                                          size: 20.0, color: Colors.black38),
+                                    ],
+                                  ))
                             ],
                           )),
-
                     ],
                   )
                 ],

@@ -77,7 +77,7 @@ class _AppNaviBarState extends State<AppNaviBar> with SingleTickerProviderStateM
 //                color: Colors.black,
             height: 40,
             child:  Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Padding(
@@ -85,7 +85,7 @@ class _AppNaviBarState extends State<AppNaviBar> with SingleTickerProviderStateM
                   child: Icon(Icons.share,color: Colors.white70,),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 30),
+                  padding: EdgeInsets.only(left: 20),
                   child: Icon(Icons.settings,color: Colors.white70,),
                 ),
               ],

@@ -143,7 +143,7 @@ class _HomeTopViewState extends State<HomeTopView>
             return Container(
 //              color: Colors.teal,
               width: 375.0,
-              height: 170.0,
+              height: 160.0,
               padding: EdgeInsets.only(left: 5, top: 5, right: 5, bottom: 0),
               child: new GridView.builder(
                 physics: new NeverScrollableScrollPhysics(),
@@ -152,7 +152,7 @@ class _HomeTopViewState extends State<HomeTopView>
                   //横轴的最大长度
                   maxCrossAxisExtent: 75.0,
                   //主轴间隔
-                  mainAxisSpacing: 10.0,
+                  mainAxisSpacing: 0.0,
                   //横轴间隔
                   crossAxisSpacing: 2.0,
                 ),
@@ -164,7 +164,7 @@ class _HomeTopViewState extends State<HomeTopView>
                       new Image.network(
                         iconImages[index],
                         width: 75,
-                        height: 50,
+                        height: 44,
                         fit: BoxFit.cover,
                       ),
                       Container(

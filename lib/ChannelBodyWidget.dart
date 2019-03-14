@@ -44,7 +44,7 @@ class _MyVideoPlayerState extends State<MyVideoPlayer>
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          height: 44.0,
+                          height: 50.0,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             crossAxisAlignment: CrossAxisAlignment.start,
