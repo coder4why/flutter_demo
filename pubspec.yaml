@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   video_player:
   flutter_swiper:
+  flutter_webview_plugin:
+
 #  video_launcher:
 
 dev_dependencies:

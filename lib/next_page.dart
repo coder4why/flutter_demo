@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 class DetailPage extends StatefulWidget {
   @override
@@ -23,13 +24,18 @@ class _DetailPageState extends State<DetailPage>
 
   @override
   Widget build(BuildContext context) {
-    return new DefaultTabController(
-        length: 3,
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text('详情'),
-          ),
-
-        ));
+    return WebviewScaffold(
+      url: 'https://github.com/HuPingKang/flutter_demo',
+      appBar: AppBar(
+        title: Text('详情'),
+//        actions: <Widget>[
+//          GestureDetector(
+//            onTap: () {
+//            },
+//            child: Image.asset('img/icon_menu_share.png'),
+//          )
+//        ],
+      ),
+    );
   }
 }

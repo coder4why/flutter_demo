@@ -14,7 +14,7 @@ import 'person_body.dart';
 
 void main() => runApp(MyApp());
 
-Color themeColor = Colors.deepOrange;
+Color themeColor = Colors.red;
 
 class MyApp extends StatelessWidget {
   @override
@@ -22,6 +22,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+//        primaryColor: Colors.white,
+//        dividerColor: Color(0xffeeeeee),
+//        scaffoldBackgroundColor: Color(0xFF888888),
+//        textTheme: TextTheme(body1: TextStyle(color: Color(0xFF333333))),
         primarySwatch: themeColor,
       ),
       debugShowCheckedModeBanner: true,
