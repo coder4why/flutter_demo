@@ -11,6 +11,7 @@ import 'VipAppBarWidget.dart';
 import 'VipBodyWidget.dart';
 import 'DynamicsAppBarWidget.dart';
 import 'person_body.dart';
+import 'home_zhhuibo_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -73,9 +74,7 @@ class _MyHomePageState extends State<MyHomePage>
       HomeTopView(),
       MySwiperPics(),
       HomeHotWidget(),
-      new Center(
-          child: Image.network(
-              'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1761595179,3348344402&fm=26&gp=0.jpg')),
+      HomeZhuiFanWidget(),
     ];
     var style = TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500);
     var bottoms = [

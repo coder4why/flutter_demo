@@ -26,6 +26,7 @@ dependencies:
   video_player:
   flutter_swiper:
   flutter_webview_plugin:
+  flutter_staggered_grid_view:
 
 #  video_launcher:
 
