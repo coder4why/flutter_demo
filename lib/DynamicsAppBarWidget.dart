@@ -108,6 +108,7 @@ class _DynamicsAppBarState extends State<DynamicsAppBar>
                     style: style,
                   ),
                 ),
+
               ],
               controller: _tabController,
             ),
