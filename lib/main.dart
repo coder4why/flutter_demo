@@ -15,7 +15,7 @@ import 'home_zhhuibo_page.dart';
 
 void main() => runApp(MyApp());
 
-Color themeColor = Colors.red;
+Color themeColor = Color(0xFF333333);// Colors.red;
 
 class MyApp extends StatelessWidget {
   @override
@@ -23,11 +23,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-//        primaryColor: Colors.white,
+       primaryColor: Color(0xFF333333),
 //        dividerColor: Color(0xffeeeeee),
 //        scaffoldBackgroundColor: Color(0xFF888888),
 //        textTheme: TextTheme(body1: TextStyle(color: Color(0xFF333333))),
-        primarySwatch: themeColor,
+        // primarySwatch: themeColor,
       ),
       debugShowCheckedModeBanner: true,
       home: MyHomePage(),

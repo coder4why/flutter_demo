@@ -16,23 +16,29 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## iOS
-![首页直播](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_zhibo.png "home_zhibo")
-![首页推荐](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_tuijian.png "home_tuijian")
-![首页热门](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_hot.png  "home_hot")
-![首页追番](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_zhuifan.png  "home_zhuifan")
-![频道](https://github.com/HuPingKang/flutter_demo/blob/master/images/channel_page.png "channel_page")
-![详情](https://github.com/HuPingKang/flutter_demo/blob/master/images/detail.png "detail")
-![动态](https://github.com/HuPingKang/flutter_demo/blob/master/images/dynamics_page.png "dynamics_page")
-![会员购](https://github.com/HuPingKang/flutter_demo/blob/master/images/vip_shopping.png "vip_shopping")
-![我的](https://github.com/HuPingKang/flutter_demo/blob/master/images/my.png "my")
+<h2 align"center">
+<img src="/images/ios/1.png" width="210" height="413"/>
+<img src="/images/ios/2.png" width="210" height="413"/>
+<img src="/images/ios/3.png" width="210" height="413"/>
+<img src="/images/ios/4.png" width="210" height="413"/>
+
+<img src="/images/ios/5.png" width="210" height="413"/>
+<img src="/images/ios/6.png" width="210" height="413"/>
+<img src="/images/ios/7.png" width="210" height="413"/>
+<img src="/images/ios/8.png" width="210" height="413"/>
+
+</h2>
 
 ## Android
-![首页直播](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_zhibo_android.png "home_zhibo_android")
-![首页推荐](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_tuijian_android.png "home_tuijian_android")
-![首页热门](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_hot_android.png  "home_hot_android")
-![首页追番](https://github.com/HuPingKang/flutter_demo/blob/master/images/home_zhuifan_android.png  "home_zhuifan_android")
-![频道](https://github.com/HuPingKang/flutter_demo/blob/master/images/channel_page_android.png "channel_page_android")
-![详情](https://github.com/HuPingKang/flutter_demo/blob/master/images/detail_android.png "detail_android")
-![动态](https://github.com/HuPingKang/flutter_demo/blob/master/images/dynamics_page_android.png "dynamics_page_android")
-![会员购](https://github.com/HuPingKang/flutter_demo/blob/master/images/vip_shopping_android.png "vip_shopping_android")
-![我的](https://github.com/HuPingKang/flutter_demo/blob/master/images/my_android.png "my")
+<h2 align"center">
+<img src="/images/android/1.png" width="210" height="457"/>
+<img src="/images/android/2.png" width="210" height="457"/>
+<img src="/images/android/3.png" width="210" height="457"/>
+<img src="/images/android/4.png" width="210" height="457"/>
+
+<img src="/images/android/5.png" width="210" height="457"/>
+<img src="/images/android/6.png" width="210" height="457"/>
+<img src="/images/android/7.png" width="210" height="457"/>
+<img src="/images/android/8.png" width="210" height="457"/>
+
+</h2>
