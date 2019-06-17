@@ -11,11 +11,23 @@ import 'VipAppBarWidget.dart';
 import 'VipBodyWidget.dart';
 import 'DynamicsAppBarWidget.dart';
 import 'person_body.dart';
+// import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'home_zhhuibo_page.dart';
+// import 'package:flutter/services.dart';
 
-void main() => runApp(MyApp());
+void main() { 
+  // await FlutterStatusbarcolor.setStatusBarColor(Colors.transparent);
+  // if (useWhiteForeground(Colors.white)) {
+  //   FlutterStatusbarcolor.setStatusBarWhiteForeground(true);
+  // } else {
+  //   FlutterStatusbarcolor.setStatusBarWhiteForeground(false);
+  // }
+  // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+  runApp(MyApp());
+}
 
-Color themeColor = Color(0xFF333333);// Colors.red;
+Color themeColor = Colors.grey;
+Color selectColor = Color(0xFFeb7b98);//
 
 class MyApp extends StatelessWidget {
   @override
@@ -23,7 +35,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       primaryColor: Color(0xFF333333),
+       primaryColor: Color(0xFFeb7b98),
+       brightness: Brightness.light
 //        dividerColor: Color(0xffeeeeee),
 //        scaffoldBackgroundColor: Color(0xFF888888),
 //        textTheme: TextTheme(body1: TextStyle(color: Color(0xFF333333))),
@@ -79,26 +92,44 @@ class _MyHomePageState extends State<MyHomePage>
     var style = TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500);
     var bottoms = [
       TabBar(
-        labelStyle:
-            TextStyle(color: Colors.yellow, decorationColor: Colors.yellow),
+        // labelPadding: EdgeInsets.all(0),
+        indicatorSize: TabBarIndicatorSize.label,
+        // labelStyle:
+            // TextStyle(color: Colors.yellow),
         indicatorColor: Colors.white,
-//        unselectedLabelColor: Colors.yellow,
+        // indicatorColor: Colors.black,
+        labelColor: Colors.white,
+        unselectedLabelColor:Colors.white54,
         tabs: <Widget>[
-          new Tab(
+          new Container(
+            // color: Colors.white,
+            // width: 375/4.0,
+            child: Tab(
             icon: Text(
               '直播',
               style: style,
             ), //new Icon(Icons.directions_bike),
           ),
-          new Tab(
+          ),
+          new Container(
+            // color: Colors.white,
+            // width: 375/4.0,
+            child: Tab(
             icon: Text('推荐', style: style),
+          )
           ),
-          new Tab(
+          new Container(
+            // color: Colors.white,
+            // width: 375/4.0,
+            child: Tab(
             icon: Text('热门', style: style), //new Icon(Icons.directions_boat),
-          ),
-          new Tab(
+          )),
+          new Container(
+            // color: Colors.white,
+            // width: 375/4.0,
+            child: Tab(
             icon: Text('追番', style: style), // new Icon(Icons.directions_bus),
-          ),
+          )),
         ],
         controller: _tabController,
       ),
@@ -119,46 +150,53 @@ class _MyHomePageState extends State<MyHomePage>
     ];
     return Scaffold(
       appBar:_currentIndex==4?null:AppBar(
+        brightness: Brightness.dark,
+        // elevation: 0.5,
+        // backgroundColor: Colors.transparent,
         title: appBars[_currentIndex],
         bottom: bottoms[_currentIndex],
       ),
       body: bodys[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
 //        iconSize: 20.0,
+        backgroundColor: Colors.white,
+        selectedItemColor: Color(0xFFeb7b98), //Colors.red,
+        unselectedItemColor: Color(0xFFa6a6a6),
+
         items: [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                color: themeColor,
+                // color: selectColor,
               ),
               title: Text(
                 '首页',
-                style: TextStyle(color: themeColor),
+                // style: TextStyle(color: themeColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.audiotrack,
-                color: themeColor,
+                // color:themeColor,
               ),
-              title: Text('频道', style: TextStyle(color: themeColor))),
+              title: Text('频道', )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.cloud,
-                color: themeColor,
+                // color: themeColor,
               ),
-              title: Text('动态', style: TextStyle(color: themeColor))),
+              title: Text('动态', )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_cart,
-                color: themeColor,
+                // color: themeColor,
               ),
-              title: Text('会员购', style: TextStyle(color: themeColor))),
+              title: Text('会员购',)),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
-                color: themeColor,
+                // color: themeColor,
               ),
-              title: Text('我的', style: TextStyle(color: themeColor))),
+              title: Text('我的')),
         ],
 //        fixedColor: Colors.red,
         type: BottomNavigationBarType.fixed,

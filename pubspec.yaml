@@ -27,6 +27,7 @@ dependencies:
   flutter_swiper:
   flutter_webview_plugin:
   flutter_staggered_grid_view:
+  flutter_statusbarcolor:
 
 #  video_launcher:
 

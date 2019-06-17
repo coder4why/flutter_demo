@@ -83,12 +83,18 @@ class _DynamicsAppBarState extends State<DynamicsAppBar>
 
   @override
   Widget build(BuildContext context) {
-    var style = TextStyle(fontSize: 20.0, color: Colors.white);
+    var style = TextStyle(fontSize: 20.0,);
     return new DefaultTabController(
         length: 3,
         child: Scaffold(
           appBar: AppBar(
             title: new TabBar(
+              indicatorColor: Colors.white,
+              indicatorSize: TabBarIndicatorSize.label,
+              // labelStyle:style,
+              labelColor: Colors.white,
+              unselectedLabelColor: Colors.white54,
+              // unselectedLabelStyle: TextStyle(fontSize: 17.0, color: Colors.white54),
               tabs: <Widget>[
                 new Tab(
                   icon: Text(
