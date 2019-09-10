@@ -1,4 +1,3 @@
-# bilibili_app
 
 ## iOS
 <h2 align"center">
